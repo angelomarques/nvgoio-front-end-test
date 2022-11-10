@@ -3,6 +3,13 @@ import styled from "styled-components";
 export const Container = styled.header`
   background-color: ${(props) => props.theme.palette.gray["100"]};
   padding: 15px 22px;
+`;
+
+export const Content = styled.div`
+  background-color: ${(props) => props.theme.palette.gray["100"]};
+  padding: 15px 22px;
+  max-width: 1100px;
+  margin: auto;
 
   display: flex;
   align-items: center;
@@ -54,7 +61,7 @@ export const NavLinks = styled.nav`
   }
 
   & a {
-    color: ${(props) => props.theme.palette.gray['900']};
+    color: ${(props) => props.theme.palette.gray["900"]};
   }
 
   & li:not(:last-child) {
