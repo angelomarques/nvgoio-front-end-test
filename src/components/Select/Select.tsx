@@ -57,6 +57,10 @@ const Select = ({
               ...provided,
               fontSize: 14,
               color: "#888888",
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+              maxWidth: '90%',
+              overflow: 'hidden'
             }),
             indicatorSeparator: () => ({ display: "none" }),
             dropdownIndicator: () => ({ display: "none" }),

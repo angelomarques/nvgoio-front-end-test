@@ -64,20 +64,20 @@ const TransactionsForm = ({ onSubmit }: TransactionsFormProps) => {
   return (
     <S.Container onSubmit={handleSubmit}>
       <S.FormTitle>Nova transação</S.FormTitle>
-      <div>
+      <S.InputContainer>
         <Select
           options={selectOptions}
           label="Tipo de transação"
           value={transactionType}
           onChange={handleTransactionTypeChange}
-          placeholder="Selecione o Tipo de Transação..."
+          placeholder="Selecione o Tipo de Transação"
         />
         <TextInput
           label="Nome da mercadoria"
           name="product-name"
           value={productName}
           onChange={handleProductNameChange}
-          placeholder="Digite o nome da mercadoria..."
+          placeholder="Digite o nome da mercadoria"
         />
         <TextInput
           label="Valor"
@@ -86,7 +86,7 @@ const TransactionsForm = ({ onSubmit }: TransactionsFormProps) => {
           onChange={handleProductValueChange}
           currency
         />
-      </div>
+      </S.InputContainer>
       <S.FormButton type="submit">Adicionar transação</S.FormButton>
     </S.Container>
   );

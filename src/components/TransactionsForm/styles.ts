@@ -26,12 +26,37 @@ export const FormTitle = styled.h2`
   }
 `;
 
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+  & > label {
+    &:not(:nth-child(2)) {
+      flex: 1;
+    }
+    
+    &:nth-child(2) {
+      flex: 2;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    flex-direction: column;
+    gap: 0px;
+  }
+`;
+
 export const FormButton = styled(Button)`
   @media only screen and (min-width: 768px) {
     width: 200px;
     align-self: end;
   }
-  
+
   @media only screen and (min-width: 1100px) {
     width: 100%;
   }
