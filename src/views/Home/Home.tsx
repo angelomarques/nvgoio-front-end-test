@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import TransactionsForm from "../../components/TransactionsForm";
@@ -38,6 +39,9 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Controle financeiro</title>
+      </Head>
       <Navbar />
       <S.Main>
         <TransactionsForm onSubmit={handleSubmit} />
